@@ -1,0 +1,144 @@
+.offer {
+  & {
+    margin-bottom: 28px;
+  }
+
+  &__column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 640px) {
+    &__column {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 28px;
+    }
+  }
+
+  &__stockOne {
+    position: relative;
+  }
+
+  &__stockTwo {
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__see {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 255px;
+  }
+
+  &__name {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 39px;
+    color: #fff;
+  }
+
+  @media (max-width: 991px) {
+    &__name {
+      font-size: 26px;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    line-height: 39px;
+    text-decoration: underline;
+    text-shadow: 0px 1px 0px rgb(0 0 0 / 25%);
+  }
+
+  @media (max-width: 991px) {
+    &__link {
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 39px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 28px;
+  }
+
+  @media (max-width: 768px) {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 28px;
+    }
+  }
+
+  &__itemOne {
+    position: relative;
+  }
+
+  &__itemTwo {
+    position: relative;
+  }
+
+  &__itemFree {
+    position: relative;
+  }
+
+  &__itemFour {
+    position: relative;
+  }
+
+  &__pic {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555555;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 255px;
+    text-align: center;
+  }
+
+  &__text:hover {
+    color: #fff;
+  }
+
+  @media (max-width: 991px) {
+    &__text {
+      font-size: 16px;
+      line-height: 0px;
+    }
+  }
+}
