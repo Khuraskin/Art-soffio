@@ -44,3 +44,12 @@ const swiper = new Swiper(".carousel__swiper", {
     disableOnInteraction: false,
   },
 });
+
+//search
+
+let searchOpens = document.querySelector(".header__search");
+let searchOpen = document.querySelector(".header__form");
+
+searchOpens.addEventListener("click", function () {
+  searchOpen.classList.toggle("header__form-active");
+});
