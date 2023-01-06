@@ -6,6 +6,12 @@
 
   @media (max-width: 820px) {
     & {
+      display: none;
+    }
+  }
+
+  @media (max-width: 820px) {
+    & {
       border: none;
     }
   }
@@ -18,13 +24,7 @@
     display: grid;
     grid-template-areas: "a a a a a a a";
     justify-content: space-between;
-  }
-
-  @media (max-width: 820px) {
-    &__item {
-      display: none;
-    }
-  }
+  }  
 
   &__link {
     font-family: "Open Sans";

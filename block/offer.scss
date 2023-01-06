@@ -81,6 +81,12 @@
     text-align: center;
   }
 
+  @media (max-width: 778px) {
+    &__title {
+      font-size: 26px;
+       }
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

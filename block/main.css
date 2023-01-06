@@ -193,8 +193,14 @@ img {
   border-radius: 19px;
   width: 100%;
 }
+.header__column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+}
 @media (max-width: 820px) {
-  .header__row {
+  .header__column {
     text-align: end;
   }
 }
@@ -204,11 +210,17 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.header__search {
+.header__row {
   padding-right: 30px;
 }
+.header__row:last-child {
+  padding-right: 0;
+}
+.header__count {
+  display: none;
+}
 @media (max-width: 820px) {
-  .header__search {
+  .header__row {
     padding-right: 10px;
   }
 }
@@ -216,6 +228,11 @@ img {
 .navigation {
   border-bottom: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
+}
+@media (max-width: 820px) {
+  .navigation {
+    display: none;
+  }
 }
 @media (max-width: 820px) {
   .navigation {
@@ -232,11 +249,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media (max-width: 820px) {
-  .navigation__item {
-    display: none;
-  }
 }
 .navigation__link {
   font-family: "Open Sans";
@@ -266,6 +278,11 @@ img {
   color: #555555;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .carousel__title {
+    font-size: 26px;
+  }
+}
 .carousel__all {
   display: -ms-grid;
   display: grid;
@@ -279,6 +296,11 @@ img {
   line-height: 39px;
   color: #555555;
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .carousel__see {
+    font-size: 14px;
+  }
 }
 .carousel__see:hover {
   color: #323232;
@@ -305,6 +327,11 @@ img {
   letter-spacing: 1px;
   color: #555555;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .carousel__text {
+    font-size: 12px;
+  }
 }
 .carousel__price {
   font-family: "Open Sans";
@@ -360,11 +387,11 @@ img {
 }
 .carousel__prev-button {
   color: #b78595;
-  top: 35%;
+  top: 30%;
 }
 .carousel__next-button {
   color: #b78595;
-  top: 35%;
+  top: 30%;
 }
 
 .offer {
@@ -453,6 +480,11 @@ img {
   text-align: center;
   margin-bottom: 40px;
   text-align: center;
+}
+@media (max-width: 778px) {
+  .offer__title {
+    font-size: 26px;
+  }
 }
 .offer__list {
   display: -ms-grid;
