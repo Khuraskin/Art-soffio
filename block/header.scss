@@ -129,7 +129,11 @@
   &__row:last-child {
     padding-right: 0;
   }
-  
+
+  &__row-search {
+    position: relative;
+  }
+
   &__count {
     display: none;
   }
@@ -138,5 +142,52 @@
     &__row {
       padding-right: 10px;
     }
+  }
+
+  &__form {
+    border: 1px solid rgb(190, 187, 187);
+    background: gray;
+    border-radius: 12px;
+    width: 500px;
+    height: 62px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    position: absolute;
+    top: 26px;
+    right: 37px;
+    display: none;
+    z-index: 99;
+  }
+
+  &__form-active {
+    display: block;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  &__input {
+    background: gray;
+    border: 1px solid #722323;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 12px 0 0 12px;    
+  }
+
+  &__input::placeholder {
+    color: #fff;
+  }
+
+  &__button {
+    background: gray;
+    color: #ffffff;
+    border: 1px solid #722323;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 0 12px 12px 0;
   }
 }
