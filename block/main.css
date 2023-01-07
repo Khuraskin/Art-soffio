@@ -932,7 +932,7 @@ img {
 }
 @media (max-width: 440px) {
   .images {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 }
 .images__pic {
