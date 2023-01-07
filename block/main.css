@@ -893,8 +893,8 @@ img {
 .katalog__pic {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .katalog__link {
   font-family: "Open Sans";
