@@ -24,7 +24,7 @@
     display: grid;
     grid-template-areas: "a a a a a a a";
     justify-content: space-between;
-  }  
+  }
 
   &__link {
     font-family: "Open Sans";
@@ -33,5 +33,6 @@
     font-size: 20px;
     line-height: 24px;
     color: #555555;
+    text-transform: uppercase;
   }
 }
