@@ -936,7 +936,7 @@ img {
   }
 }
 .images__pic {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
