@@ -146,7 +146,7 @@
 
   &__form {
     border: 1px solid rgb(190, 187, 187);
-    background: gray;
+    background: #80808059;
     border-radius: 12px;
     width: 500px;
     height: 62px;
@@ -182,7 +182,7 @@
 
   &__input {
     font-size: 20px;
-    background: gray;
+    background: #80808059;
     border: 1px solid #4c4c3c;
     outline: none;
     cursor: pointer;
@@ -192,7 +192,7 @@
   }
 
   &__input::placeholder {
-    color: #fff;
+    color: #555555;
   }
 
   @media (max-width: 640px) {
@@ -211,8 +211,8 @@
 
   &__button {
     font-size: 20px;
-    background: gray;
-    color: #ffffff;
+    background: #80808059;
+    color: #555555;
     border: 1px solid #4c4c3c;
     padding: 8px;
     margin-right: 10px;

@@ -229,7 +229,7 @@ img {
 }
 .header__form {
   border: 1px solid rgb(190, 187, 187);
-  background: gray;
+  background: rgba(128, 128, 128, 0.3490196078);
   border-radius: 12px;
   width: 500px;
   height: 62px;
@@ -285,7 +285,7 @@ img {
 }
 .header__input {
   font-size: 20px;
-  background: gray;
+  background: rgba(128, 128, 128, 0.3490196078);
   border: 1px solid #4c4c3c;
   outline: none;
   cursor: pointer;
@@ -294,19 +294,19 @@ img {
   border-radius: 12px 0 0 12px;
 }
 .header__input::-webkit-input-placeholder {
-  color: #fff;
+  color: #555555;
 }
 .header__input::-moz-placeholder {
-  color: #fff;
+  color: #555555;
 }
 .header__input:-ms-input-placeholder {
-  color: #fff;
+  color: #555555;
 }
 .header__input::-ms-input-placeholder {
-  color: #fff;
+  color: #555555;
 }
 .header__input::placeholder {
-  color: #fff;
+  color: #555555;
 }
 @media (max-width: 640px) {
   .header__input {
@@ -322,8 +322,8 @@ img {
 }
 .header__button {
   font-size: 20px;
-  background: gray;
-  color: #ffffff;
+  background: rgba(128, 128, 128, 0.3490196078);
+  color: #555555;
   border: 1px solid #4c4c3c;
   padding: 8px;
   margin-right: 10px;
