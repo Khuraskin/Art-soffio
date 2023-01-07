@@ -942,6 +942,147 @@ img {
      object-fit: contain;
 }
 
+.block__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.block__item {
+  text-align: center;
+}
+.block__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 40px;
+  color: #888888;
+}
+.block__title {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 40px;
+  color: #555555;
+}
+@media (max-width: 440px) {
+  .block__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.block__link {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 40px;
+  color: #555555;
+}
+@media (max-width: 440px) {
+  .block__link {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+.block__pic {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.color {
+  margin-bottom: 28px;
+}
+.color__columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.color__column-one {
+  position: relative;
+}
+.color__column-two {
+  position: relative;
+}
+.color__title {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  color: #555555;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .color__title {
+    font-size: 26px;
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 440px) {
+  .color__title {
+    margin-bottom: 10px;
+  }
+}
+.color__pic {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.color__link-one {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  color: #fff;
+  text-decoration: underline;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+@media (max-width: 768px) {
+  .color__link-one {
+    font-size: 14px;
+  }
+}
+@media (max-width: 440px) {
+  .color__link-one {
+    font-size: 10px;
+  }
+}
+.color__link-two {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  color: #fff;
+  text-decoration: underline;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+@media (max-width: 768px) {
+  .color__link-two {
+    font-size: 14px;
+  }
+}
+@media (max-width: 440px) {
+  .color__link-two {
+    font-size: 10px;
+  }
+}
+
 .footer {
   background: #a19c9c;
 }

@@ -1,0 +1,56 @@
+.block {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 40px;
+    color: #888888;
+  }
+
+  &__title {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 40px;
+    color: #555555;
+  }
+
+  @media (max-width: 440px) {
+    &__title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+  &__link {
+    font-family: "Open Sans";    
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 40px;
+    color: #555555;
+  }
+
+  @media (max-width: 440px) {
+    &__link {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+  &__pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
