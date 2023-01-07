@@ -2,6 +2,12 @@
   & {
     margin-bottom: 50px;
   }
+
+  @media (max-width: 440px) {
+    & {
+      margin-bottom: 15px;
+    }
+  }
   &__pic {
     max-width: 100%;
     height: auto;

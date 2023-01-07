@@ -857,8 +857,18 @@ img {
 .katalog__wrapper {
   margin-bottom: 50px;
 }
+@media (max-width: 440px) {
+  .katalog__wrapper {
+    margin-bottom: 15px;
+  }
+}
 .katalog__wrapper:last-child {
   margin-bottom: 40px;
+}
+@media (max-width: 440px) {
+  .katalog__wrapper:last-child {
+    margin-bottom: 10px;
+  }
 }
 .katalog__title {
   font-family: "Open Sans";
@@ -919,6 +929,11 @@ img {
 
 .images {
   margin-bottom: 50px;
+}
+@media (max-width: 440px) {
+  .images {
+    margin-bottom: 15px;
+  }
 }
 .images__pic {
   max-width: 100%;
