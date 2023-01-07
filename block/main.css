@@ -284,6 +284,7 @@ img {
   -ms-grid-column: 2;
 }
 .header__input {
+  font-size: 20px;
   background: gray;
   border: 1px solid #4c4c3c;
   outline: none;
@@ -320,6 +321,7 @@ img {
   }
 }
 .header__button {
+  font-size: 20px;
   background: gray;
   color: #ffffff;
   border: 1px solid #4c4c3c;
