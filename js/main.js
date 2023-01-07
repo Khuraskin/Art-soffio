@@ -45,6 +45,34 @@ const swiper = new Swiper(".carousel__swiper", {
   },
 });
 
+//katalog swiper
+
+const slid = new Swiper(".katalog__column", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+
+  loop: true,
+});
+
 //search
 
 let searchOpens = document.querySelector(".header__search");
