@@ -1,4 +1,13 @@
 .header {
+  @media (max-width: 820px) {
+    & {
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      background: rgb(255 255 255);
+    }
+  }
+
   &__wrapper {
     display: grid;
     grid-template-areas: "a a a";
@@ -36,7 +45,7 @@
     transition: all 0.3s ease-out 0s;
   }
 
-  &__burger:active &__line {
+  &__burger.active &__line {
     transform: scale(0);
   }
 
@@ -51,7 +60,7 @@
     transition: all 0.3s ease-out 0s;
   }
 
-  &__burger:active:before {
+  &__burger.active:before {
     transform: rotate(45deg);
     top: 9px;
   }
@@ -67,7 +76,7 @@
     transition: all 0.3s ease-out 0s;
   }
 
-  &__burger:active::after {
+  &__burger.active::after {
     transform: rotate(-45deg);
     bottom: 9px;
   }
@@ -196,7 +205,7 @@
   }
 
   @media (max-width: 640px) {
-    &__input {      
+    &__input {
       padding: 4px;
       margin-left: 5px;
     }
@@ -231,5 +240,4 @@
       font-size: 14px;
     }
   }
-
 }

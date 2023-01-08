@@ -135,7 +135,7 @@ img {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-.header__burger:active .header__line {
+.header__burger.active .header__line {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -150,7 +150,7 @@ img {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-.header__burger:active:before {
+.header__burger.active:before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 9px;
@@ -166,7 +166,7 @@ img {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-.header__burger:active::after {
+.header__burger.active::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   bottom: 9px;
