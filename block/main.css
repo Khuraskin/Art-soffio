@@ -88,6 +88,14 @@ img {
   display: flex;
 }
 
+@media (max-width: 820px) {
+  .header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: white;
+  }
+}
 .header__wrapper {
   display: -ms-grid;
   display: grid;
@@ -1120,6 +1128,11 @@ img {
 
 .pic {
   margin-bottom: 50px;
+}
+@media (max-width: 820px) {
+  .pic {
+    padding-top: 88px;
+  }
 }
 @media (max-width: 440px) {
   .pic {
