@@ -1,3 +1,10 @@
+//Menu Burger Header
+
+let menuBtn = document.querySelector(".header__burger");
+menuBtn.addEventListener("click", function () {
+  menuBtn.classList.toggle("active");
+});
+
 //hit slider
 const slider = new Swiper(".hit__wrapper", {
   loop: true,
