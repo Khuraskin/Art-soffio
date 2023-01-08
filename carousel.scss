@@ -1,0 +1,151 @@
+.carousel {
+  & {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    color: #555555;
+    text-align: center;
+  }
+
+  &__variete {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 26px;
+    }
+  }
+
+  &__all {
+    display: grid;
+    justify-content: end;
+  }
+
+  &__see {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 39px;
+    color: #555555;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    &__see {
+      font-size: 14px;
+    }
+  }
+
+  &__see:hover {
+    color: #323232;
+    text-decoration: none;
+  }
+
+  &__form {
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    border: 1px solid #e5e5e5;
+  }
+
+  &__pic {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 440px) {
+    &__pic-size {
+      height: 100px;
+    }
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #555555;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    &__text {
+      font-size: 12px;
+    }
+  }
+
+  &__price {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #555555;
+    text-align: center;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-areas: "a a a a a a a a";
+    justify-content: flex-start;
+  }
+
+  &__input {
+    display: none;
+    width: 13px;
+    height: 13px;
+  }
+
+  &__view:checked ~ &__input::before {
+    display: block;
+  }
+
+  &__view {
+    background: gold;
+    border: 1px solid #008000;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+  }
+  &__button {
+    width: 100%;
+    height: auto;
+    background: #a29c9c;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 19px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__btn {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    color: #fff;
+  }
+
+  &__prev-button {
+    color: #b78595;
+    top: 30%;
+  }
+
+  &__next-button {
+    color: #b78595;
+    top: 30%;
+  }
+}
