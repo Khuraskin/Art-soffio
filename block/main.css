@@ -1238,6 +1238,11 @@ img {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
+@media (max-width: 768px) {
+  .face__subtitle {
+    top: 50%;
+  }
+}
 .face__h2 {
   font-family: "Open Sans";
   font-weight: 600;
@@ -1245,6 +1250,12 @@ img {
   line-height: 39px;
   text-transform: uppercase;
   color: #fff;
+}
+@media (max-width: 440px) {
+  .face__h2 {
+    font-size: 20px;
+    line-height: 10px;
+  }
 }
 .face__pic {
   width: 100%;
@@ -1255,7 +1266,7 @@ img {
 .face__link-one {
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 28px;
+  font-size: 18px;
   line-height: 39px;
   color: #fff;
   text-decoration: underline;
@@ -1302,6 +1313,17 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .skin__link {
+    font-size: 13px;
+    line-height: 0;
+  }
+}
+@media (max-width: 440px) {
+  .skin__link {
+    font-size: 10px;
+  }
 }
 
 .footer {
