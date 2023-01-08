@@ -1008,6 +1008,7 @@ img {
   font-size: 13px;
   line-height: 40px;
   color: #888888;
+  text-decoration: underline;
 }
 @media (max-width: 440px) {
   .block__link {
