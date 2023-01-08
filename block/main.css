@@ -1192,6 +1192,113 @@ img {
      object-fit: cover;
 }
 
+.face {
+  margin-bottom: 28px;
+}
+.face__columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+@media (max-width: 440px) {
+  .face__columns {
+    gap: 10px;
+  }
+}
+.face__column-one {
+  position: relative;
+}
+.face__title {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  color: #555555;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .face__title {
+    font-size: 26px;
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 440px) {
+  .face__title {
+    margin-bottom: 10px;
+  }
+}
+.face__subtitle {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.face__h2 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.face__pic {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.face__link-one {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  color: #fff;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .face__link-one {
+    font-size: 14px;
+  }
+}
+
+.skin__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.skin__column {
+  border: 1px solid rgba(161, 156, 156, 0.2784313725);
+}
+.skin__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.skin__column {
+  position: relative;
+}
+.skin__link {
+  font-weight: 600;
+  color: #888888;
+  font-size: 18px;
+  line-height: 39px;
+  text-decoration: underline;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .footer {
   background: #a19c9c;
 }
