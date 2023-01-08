@@ -9,6 +9,12 @@
     gap: 28px;
   }
 
+  @media (max-width: 440px) {
+    &__columns {
+        gap: 10px;
+    }
+  }
+
   &__column-one {
     position: relative;
   }

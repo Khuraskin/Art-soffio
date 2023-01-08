@@ -1,0 +1,18 @@
+.pic {
+
+  & {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 440px) {
+    & {
+        margin-bottom: 5px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
