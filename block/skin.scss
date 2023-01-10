@@ -7,6 +7,8 @@
 
   @media (max-width: 440px) {
     &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
       gap: 10px;
     }
   }

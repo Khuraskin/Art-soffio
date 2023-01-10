@@ -11,6 +11,8 @@
 
   @media (max-width: 440px) {
     &__columns {
+      grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
         gap: 10px;
     }
   }

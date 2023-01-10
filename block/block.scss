@@ -25,8 +25,20 @@
 
   @media (max-width: 440px) {
     &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
       gap: 10px;
     }
+  }
+
+  &__img {
+    border: 1px solid rgba(161, 156, 156, 0.2784313725);
+  }
+
+  &__pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   &__item {
@@ -72,10 +84,5 @@
       line-height: 20px;
     }
   }
-
-  &__pic {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
+  
 }

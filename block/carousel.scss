@@ -59,13 +59,7 @@
     max-width: 100%;
     height: auto;
     object-fit: contain;
-  }
-
-  @media (max-width: 440px) {
-    &__pic-size {
-      height: 100px;
-    }
-  }
+  } 
 
   &__text {
     font-family: "Open Sans";
