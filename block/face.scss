@@ -1,4 +1,5 @@
 .face {
+
   & {
     margin-bottom: 28px;
   }
@@ -6,12 +7,13 @@
   &__columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+    column-gap: 28px;
   }
 
   @media (max-width: 440px) {
     &__columns {
-      gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 10px;
     }
   }
 
@@ -72,12 +74,16 @@
     }
   }
 
+  &__picture {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+  }
 
   &__pic {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+  }  
 
   &__link-one {
     font-family: "Open Sans";
@@ -93,4 +99,61 @@
       font-size: 14px;
     }
   }
+
+  &__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #555555;
+    text-align: center;
+  }
+
+  &__price {     
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #555555;
+      text-align: center;
+      margin-bottom: 10px;
+  }  
+
+  &__column-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+  } 
+
+  &__carousel-pic {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__button {
+    width: 100%;
+    height: auto;
+    background: #a29c9c;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+    border-radius: 19px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  &__btn {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    color: #fff;
+  }
+
 }

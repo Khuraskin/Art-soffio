@@ -1,97 +1,107 @@
 .makeup {
+  & {
+    margin-bottom: 40px;
+  }
 
+  @media (max-width: 768px) {
     & {
-        margin-bottom: 40px;
+      margin-bottom: 15px;
     }
+  }
 
+  &__title {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    color: #555555;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
 
-    @media (max-width: 768px) {
-        & {
-
-            margin-bottom: 15px;
-        }
-    }
-
+  @media (max-width: 768px) {
     &__title {
-        font-family: "Open Sans";
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 40px;
-        color: #555555;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 40px;
+      font-size: 26px;
+      margin-bottom: 15px;
     }
+  }
 
-    @media (max-width: 768px) {
-        &__title {
-            font-size: 26px;
-            margin-bottom: 15px;
-        }
-    }
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
 
+  @media (max-width: 440px) {
     &__columns {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 28px;
+      -ms-grid-columns: 1fr;
+      grid-template-columns: repeat(1, 1fr);
+      -ms-grid-rows: 1fr 10px 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
     }
+  }
 
-    @media (max-width: 440px) {
-        &__columns {
-            -ms-grid-columns: 1fr;
-            grid-template-columns: repeat(1, 1fr);
-            -ms-grid-rows: 1fr 10px 1fr;
-            grid-template-rows: repeat(2, 1fr);
-            gap: 10px;
-         }
-    }
+  &__column {
+    position: relative;
+  }
 
-    &__column {
-        position: relative;
-    }
+  &__pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
-    &__pic {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
+  &__row {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
+  @media (max-width: 768px) {
     &__row {
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translateX(-50%);
+      top: 68%;
     }
+  }
 
+  &__text {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
     &__text {
-        font-family: "Open Sans";
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 39px;
-        text-transform: uppercase;
-        color: #fff;
+      font-size: 28px;
+      line-height: 20px;
     }
+  }
 
-    @media (max-width: 440px) {
-        &__text {
-            font-size: 20px;
-            line-height: 10px
-        }
+  @media (max-width: 440px) {
+    &__text {
+      font-size: 20px;
+      line-height: 10px;
     }
+  }
 
+  &__link {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 39px;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
     &__link {
-        font-family: "Open Sans";
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 39px;
-        color: #fff;
-        text-decoration: underline;
+        font-size: 14px;
+        line-height: 20px;
     }
-
-    @media (max-width: 768px) {
-        &_link {
-            font-size: 14px;
-        }
-    }
-
+  }
 }

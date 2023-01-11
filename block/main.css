@@ -1222,11 +1222,17 @@ img {
   display: grid;
   -ms-grid-columns: 1fr 28px 1fr;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  -webkit-column-gap: 28px;
+     -moz-column-gap: 28px;
+          column-gap: 28px;
 }
 @media (max-width: 440px) {
   .face__columns {
-    gap: 10px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
   }
 }
 .face__column-one {
@@ -1279,6 +1285,10 @@ img {
     line-height: 10px;
   }
 }
+.face__picture {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
 .face__pic {
   width: 100%;
   height: auto;
@@ -1297,6 +1307,62 @@ img {
   .face__link-one {
     font-size: 14px;
   }
+}
+.face__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #555555;
+  text-align: center;
+}
+.face__price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #555555;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.face__column-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 28px;
+     -moz-column-gap: 28px;
+          column-gap: 28px;
+}
+.face__carousel-pic {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.face__button {
+  width: 100%;
+  height: auto;
+  background: #a29c9c;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.face__btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  color: #fff;
 }
 
 .skin__wrapper {
@@ -1416,6 +1482,11 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media (max-width: 768px) {
+  .makeup__row {
+    top: 68%;
+  }
+}
 .makeup__text {
   font-family: "Open Sans";
   font-weight: 600;
@@ -1423,6 +1494,12 @@ img {
   line-height: 39px;
   text-transform: uppercase;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .makeup__text {
+    font-size: 28px;
+    line-height: 20px;
+  }
 }
 @media (max-width: 440px) {
   .makeup__text {
@@ -1439,8 +1516,9 @@ img {
   text-decoration: underline;
 }
 @media (max-width: 768px) {
-  .makeup_link {
+  .makeup__link {
     font-size: 14px;
+    line-height: 20px;
   }
 }
 
