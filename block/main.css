@@ -788,7 +788,8 @@ img {
   line-height: 40px;
   color: #fff;
   cursor: pointer;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 @media (max-width: 991px) {
   .novelty__link {
@@ -1217,25 +1218,21 @@ img {
 .face {
   margin-bottom: 28px;
 }
-.face__columns {
+.face__wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 28px 1fr;
   grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 28px;
-     -moz-column-gap: 28px;
-          column-gap: 28px;
+  gap: 28px;
 }
 @media (max-width: 440px) {
-  .face__columns {
+  .face__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    gap: 10px;
   }
 }
-.face__column-one {
+.face__column {
   position: relative;
 }
 .face__title {
@@ -1261,14 +1258,20 @@ img {
 }
 .face__subtitle {
   position: absolute;
-  top: 70%;
+  text-align: center;
+  bottom: 20px;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 @media (max-width: 768px) {
   .face__subtitle {
-    top: 50%;
+    bottom: 100px;
+  }
+}
+@media (max-width: 440px) {
+  .face__subtitle {
+    bottom: 20px;
   }
 }
 .face__h2 {
@@ -1278,6 +1281,11 @@ img {
   line-height: 39px;
   text-transform: uppercase;
   color: #fff;
+}
+@media (max-width: 991px) {
+  .face__h2 {
+    font-size: 26px;
+  }
 }
 @media (max-width: 440px) {
   .face__h2 {
@@ -1289,9 +1297,9 @@ img {
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
 }
-.face__pic {
+.face__img {
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1303,7 +1311,7 @@ img {
   color: #fff;
   text-decoration: underline;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .face__link-one {
     font-size: 14px;
   }
@@ -1328,7 +1336,7 @@ img {
   text-align: center;
   margin-bottom: 10px;
 }
-.face__column-two {
+.face__item {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 28px 1fr;
@@ -1520,6 +1528,24 @@ img {
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+.care__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 28px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+.care__title {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 39px;
+  color: #555555;
+  text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .footer {
