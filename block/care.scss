@@ -1,18 +1,75 @@
 .care {
-    &__item {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 28px
-    }
+  & {
+    margin-bottom: 40px;
+  }
 
-    &__title {
-        font-family: "Open Sans";
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 39px;
-        color: #555555;
-        text-align: center;
-        margin-bottom: 40px;
-        text-align: center;
-    }
+  &__wrapper {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 40px;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  &__title {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 39px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__pic {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__see {
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    line-height: 39px;
+    text-decoration: underline;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+  }
+
+  &__subtitle {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #555555;
+  }
+
+  &__subtitle-none {
+    display: none;
+  }
+
+  &__btn {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #555555;
+    cursor: pointer;
+  }
 }
