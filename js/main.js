@@ -90,3 +90,13 @@ let searchOpen = document.querySelector(".header__form");
 searchOpens.addEventListener("click", function () {
   searchOpen.classList.toggle("header__form-active");
 });
+
+
+//Session btn see
+
+const btn = document.querySelector(".care__btn");
+const see = document.querySelector(".care__subtitle-none");
+btn.addEventListener("click", function () {
+  see.classList.toggle("active");
+});
+
