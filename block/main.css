@@ -788,7 +788,8 @@ img {
   line-height: 40px;
   color: #fff;
   cursor: pointer;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 @media (max-width: 991px) {
   .novelty__link {
@@ -1601,11 +1602,32 @@ img {
   line-height: 20px;
   color: #555555;
 }
-.care__subtitle-none {
+.care__dot {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555555;
+}
+.care__more {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555555;
+  max-height: 0;
+  overflow: hidden;
+}
+.care__more.none {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-out;
   transition: max-height 0.3s ease-out;
+}
+.care__more.active {
+  max-height: 500px;
+  -webkit-transition: max-height 0.6s ease-in;
+  transition: max-height 0.6s ease-in;
 }
 .care__btn {
   font-family: "Open Sans";
@@ -1620,14 +1642,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #555555;
+  background: none;
   cursor: pointer;
-}
-.care__subtitle-none.active {
-  max-height: 500px;
-  -webkit-transition: max-height 0.6s ease-in;
-  transition: max-height 0.6s ease-in;
 }
 
 .footer {
