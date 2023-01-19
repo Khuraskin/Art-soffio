@@ -1545,6 +1545,11 @@ img {
   grid-template-rows: repeat(4, 1fr);
   gap: 40px;
 }
+@media (max-width: 768px) {
+  .care__wrapper {
+    gap: 10px;
+  }
+}
 .care__item {
   display: -ms-grid;
   display: grid;
@@ -1572,6 +1577,12 @@ img {
 @media (max-width: 768px) {
   .care__title {
     font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .care__title {
+    margin-bottom: 10px;
   }
 }
 .care__img {
