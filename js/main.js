@@ -94,9 +94,26 @@ searchOpens.addEventListener("click", function () {
 
 //Session btn see
 
-const btn = document.querySelector(".care__btn");
-const see = document.querySelector(".care__subtitle-none");
-btn.addEventListener("click", function () {
-  see.classList.toggle("active");
-});
+let btns = document.querySelectorAll(".care__btn");
+
+for(care__btn of btns) {
+  care__btn.addEventListener("click", function() {
+    let item = this.closest(".care__item");
+    let dots = item.querySelector(".care__dot");
+    let more = item.querySelector(".care__more");
+
+    if(dots.style.display === "none") {
+      dots.style.display = "inline";
+      more.classList.toggle("none");
+      more.classList.remove("active");          
+    }else {
+      dots.style.display = "none";
+      more.classList.toggle("active");
+      more.classList.remove("none");     
+    }    
+  });
+}
+
+
+
 
