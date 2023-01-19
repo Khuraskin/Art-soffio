@@ -1,7 +1,8 @@
 .footer {
   & {
-    background: #a19c9c;
+    background: #a19c9c;    
   }
+  
   &__wrapper {
     display: grid;
     grid-template-areas: "a a a";
