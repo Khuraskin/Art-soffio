@@ -1,0 +1,76 @@
+.contacts {
+
+    &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    }
+
+  &__column { 
+    text-align: center;   
+    border: 3px solid #a19b9b;
+    width: 50%;
+  }
+
+  &__title {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 39px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__city {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 24px;
+    color: #555555;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555555;
+    text-transform: uppercase;
+  }
+
+  &__adress {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555555;
+  }
+
+  &__tel {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555555;
+  }
+
+  &__phone {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555555;
+  }
+
+  &__open {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555555;
+  }
+}

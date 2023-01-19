@@ -1676,6 +1676,74 @@ img {
   cursor: pointer;
 }
 
+.contacts__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.contacts__column {
+  text-align: center;
+  border: 3px solid #a19b9b;
+  width: 50%;
+}
+.contacts__title {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 39px;
+  color: #555555;
+  text-align: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contacts__city {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 24px;
+  color: #555555;
+  text-transform: uppercase;
+}
+.contacts__name {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #555555;
+  text-transform: uppercase;
+}
+.contacts__adress {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #555555;
+}
+.contacts__tel {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #555555;
+}
+.contacts__phone {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #555555;
+}
+.contacts__open {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #555555;
+}
+
 .footer {
   background: #a19c9c;
 }
