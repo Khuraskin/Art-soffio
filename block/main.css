@@ -1684,7 +1684,7 @@ img {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   justify-items: center;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 @media (max-width: 820px) {
   .contacts__wrapper {
