@@ -1,9 +1,9 @@
-html {
+html,
+body {
   height: 100%;
 }
 
 body {
-  height: 100%;
   margin: 0;
   font-family: "Graphik", sans-serif;
 }
@@ -63,11 +63,10 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden;
 }
 
 .main {
-  flex: 1 0 auto;
+  flex-grow: 1;
 }
 
 .container {
