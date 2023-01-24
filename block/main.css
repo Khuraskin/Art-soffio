@@ -101,10 +101,8 @@ img {
 
 @media (max-width: 820px) {
   .header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 999;
     width: 100%;
     background: rgb(255, 255, 255);
@@ -381,22 +379,6 @@ img {
 @media (max-width: 440px) {
   .header__button {
     font-size: 14px;
-  }
-}
-
-.body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-@media (max-width: 820px) {
-  .body {
-    padding-top: 88px;
-  }
-}
-@media (max-width: 440px) {
-  .body {
-    padding-top: 70px;
   }
 }
 
