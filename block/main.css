@@ -741,6 +741,13 @@ img {
     line-height: 0px;
   }
 }
+@media (max-width: 640px) {
+  .offer__text {
+    font-size: 14px;
+    line-height: 0px;
+    width: 155px;
+  }
+}
 
 .novelty {
   margin-bottom: 40px;
