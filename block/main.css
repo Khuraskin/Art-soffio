@@ -1679,6 +1679,11 @@ img {
   border: 3px solid #a19b9b;
   width: 50%;
 }
+@media (max-width: 440px) {
+  .contacts__column {
+    width: 100%;
+  }
+}
 .contacts__title {
   font-family: "Open Sans";
   font-weight: 600;
