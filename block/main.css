@@ -382,6 +382,12 @@ img {
   }
 }
 
+.body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .navigation {
   border-bottom: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
