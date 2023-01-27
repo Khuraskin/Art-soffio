@@ -42,7 +42,7 @@ const swiper = new Swiper(".carousel__swiper", {
     // when window width is >= 640px
     640: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 28,
     },
   },
 
@@ -75,12 +75,42 @@ const slid = new Swiper(".katalog__column", {
     // when window width is >= 640px
     640: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 28,
     },
   },
 
   loop: true,
 });
+
+//Stock swiper
+
+const stock = new Swiper(".stock__swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 28,
+    },
+  },
+
+  loop: true,
+});
+
+
 
 //search
 
