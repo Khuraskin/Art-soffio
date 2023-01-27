@@ -1504,8 +1504,7 @@ img {
   .skin__column {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: a;
+    -ms-grid-column-span: 3;    
   }
   .navigation__item > .skin__column {
     -ms-grid-row: 1;
