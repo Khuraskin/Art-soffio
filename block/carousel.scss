@@ -59,7 +59,7 @@
     max-width: 100%;
     height: auto;
     object-fit: contain;
-  } 
+  }
 
   &__text {
     font-family: "Open Sans";
@@ -88,29 +88,29 @@
     text-align: center;
   }
 
-  &__form {
+  &__price-full {
     display: grid;
-    grid-template-areas: "a a a a a a a a";
-    justify-content: flex-start;
+    grid-template-areas: "a a";
+    justify-content: center;
   }
 
-  &__input {
-    display: none;
-    width: 13px;
-    height: 13px;
+  @media (max-width: 996px) {
+    &__price-new {
+      font-size: 16px;
+    }
   }
 
-  &__view:checked ~ &__input::before {
-    display: block;
+  @media (max-width: 996px) {
+    &__price-old {
+      font-size: 16px;
+    }
   }
 
-  &__view {
-    background: gold;
-    border: 1px solid #008000;
-    width: 13px;
-    height: 13px;
-    cursor: pointer;
+  &__price-old {
+    padding-left: 10px;
+    text-decoration: line-through;
   }
+
   &__button {
     width: 100%;
     height: auto;

@@ -1,4 +1,18 @@
 .social {
+
+  & {
+    display: none;
+  }
+
+  @media (max-width: 420px) {
+    & {
+      display: block;
+      text-align: center;
+      
+    margin-bottom: 20px;
+    }
+  }
+
   &__name {
     font-family: "Open Sans";
     font-style: normal;

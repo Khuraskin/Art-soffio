@@ -1,4 +1,8 @@
 .skin {
+  &__vollare {
+    margin-bottom: 40px;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -8,8 +12,16 @@
   @media (max-width: 440px) {
     &__wrapper {
       grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       gap: 10px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    &__wrapper-reverses {
+      grid-template-areas:
+        "a"
+        "b";
     }
   }
 
@@ -19,7 +31,7 @@
 
   &__img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -27,17 +39,55 @@
     position: relative;
   }
 
-  &__link {
+  &__subtitle {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 768px) {
+    &__subtitle {
+      bottom: 100px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    &__subtitle {
+      bottom: 20px;
+    }
+  }
+
+  &__h2 {
+    font-family: "Open Sans";
     font-weight: 600;
-    color: #888888;
+    font-size: 36px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  @media (max-width: 991px) {
+    &__h2 {
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    &__h2 {
+      font-size: 20px;
+      line-height: 10px;
+    }
+  }
+
+  &__link {
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #fff;
     font-size: 18px;
     line-height: 39px;
     text-decoration: underline;
-    text-shadow: 0px 1px 0px rgb(0 0 0 / 25%);
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   @media (max-width: 768px) {
@@ -49,6 +99,28 @@
   @media (max-width: 440px) {
     &__link {
       font-size: 10px;
+    }
+  }
+
+  &__title {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    color: #555555;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  @media (max-width: 440px) {
+    &__carousel {
+      grid-area: b;
     }
   }
 }

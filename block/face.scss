@@ -1,5 +1,4 @@
 .face {
-
   & {
     margin-bottom: 28px;
   }
@@ -54,13 +53,13 @@
   }
 
   @media (max-width: 768px) {
-    &__subtitle  {
-     bottom: 100px;
+    &__subtitle {
+      bottom: 100px;
     }
   }
 
   @media (max-width: 440px) {
-    &__subtitle  {
+    &__subtitle {
       bottom: 20px;
     }
   }
@@ -76,7 +75,7 @@
 
   @media (max-width: 991px) {
     &__h2 {
-      font-size: 26px;      
+      font-size: 26px;
     }
   }
 
@@ -96,7 +95,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }  
+  }
 
   &__link-one {
     font-family: "Open Sans";
@@ -124,22 +123,22 @@
     text-align: center;
   }
 
-  &__price {     
-      font-family: "Open Sans";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      color: #555555;
-      text-align: center;
-      margin-bottom: 10px;
-  }  
+  &__price {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
   &__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 28px;
-  } 
+  }
 
   &__carousel-pic {
     max-width: 100%;
@@ -157,7 +156,7 @@
     text-align: center;
     margin-bottom: 5px;
   }
-  
+
   &__btn {
     font-family: "Open Sans";
     font-style: normal;
@@ -168,5 +167,4 @@
     text-transform: lowercase;
     color: #fff;
   }
-
 }

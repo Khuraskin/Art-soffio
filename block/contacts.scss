@@ -12,6 +12,12 @@
     width: 50%;
   }
 
+  @media (max-width: 440px) {
+    &__column {
+      width: 100%;
+    }
+  }
+
   &__title {
     font-family: "Open Sans";
     font-weight: 600;

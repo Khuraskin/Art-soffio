@@ -1,4 +1,21 @@
 .block {
+
+  &__one {
+    margin-bottom: 40px;
+  }
+
+  &__two {
+    margin-bottom: 40px;
+  }
+
+  &__three {
+    margin-bottom: 40px;
+  }
+
+  &__four {
+    margin-bottom: 40px;
+  }
+  
   &__h {
     font-family: "Open Sans";
     font-weight: 600;
@@ -29,6 +46,10 @@
     grid-template-rows: repeat(2, 1fr);
       gap: 10px;
     }
+  }
+
+  &__wrapper-stock {
+    margin-bottom: 40px;
   }
 
   &__img {

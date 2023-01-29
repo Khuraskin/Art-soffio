@@ -147,4 +147,12 @@
       line-height: 0px;
     }
   }
+
+  @media (max-width: 640px) {
+    &__text {
+      font-size: 14px;
+      line-height: 0px;
+      width: 155px;
+    }
+  }
 }
