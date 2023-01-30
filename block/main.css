@@ -1736,6 +1736,7 @@ img {
   border: 1px solid red;
   height: 35px;
   width: 30px;
+  cursor: pointer;
 }
 .cart__number {
   margin: 0;
@@ -1752,6 +1753,7 @@ img {
   border: 1px solid red;
   height: 35px;
   width: 30px;
+  cursor: pointer;
 }
 
 .contacts__wrapper {
