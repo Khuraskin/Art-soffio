@@ -143,7 +143,7 @@ for (care__btn of btns) {
 
 //cart
 
-document.querySelectorAll(".cart__quantity .cart__plus").forEach((item) => {
+document.querySelectorAll(".cart__quant .cart__plus").forEach((item) => {
   item.addEventListener("click", function () {
     ++item.parentElement.querySelector("input").value;
 
@@ -153,7 +153,7 @@ document.querySelectorAll(".cart__quantity .cart__plus").forEach((item) => {
   });
 });
 
-document.querySelectorAll(".cart__quantity .cart__minus").forEach((item) => {
+document.querySelectorAll(".cart__quant .cart__minus").forEach((item) => {
   item.addEventListener("click", function () {
     --item.parentElement.querySelector("input").value;
 
