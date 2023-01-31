@@ -1496,6 +1496,10 @@ img {
     grid-area: b;
   }
 }
+.cart__container > .skin__carousel {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  }
 .footer__social > .skin__carousel {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -1732,10 +1736,81 @@ img {
   -ms-grid-columns: 1fr 30px 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  -ms-grid-rows: auto 30px auto 30px auto;
+      grid-template-areas: "a" "b" "c";
+}
+@media (max-width: 768px) {
+  .cart__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 .cart__column {
   background: #e5e5e5;
 }
+.cart__column-one {
+  background: #e5e5e5;
+}
+.cart__column-two {
+  background: #e5e5e5;
+}
+@media (max-width: 768px) {
+  .cart__column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: a;
+  }
+  .navigation__item > .cart__column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+  }
+  .carousel__price-full > .cart__column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .cart__container > .cart__column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .footer__wrapper > .cart__column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .footer__social > .cart__column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+}
+@media (max-width: 768px) {
+  .cart__column-one {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: c;
+  }
+}
+.footer__social > .cart__column-one {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  }
+@media (max-width: 768px) {
+  .cart__column-two {
+    grid-area: b;
+  }
+}
+.cart__container > .cart__column-two {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  }
+.footer__social > .cart__column-two {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  }
 .cart__minus {
   font-size: 16px;
   border: 1px solid red;
@@ -1841,6 +1916,7 @@ img {
   font-weight: 600;
   font-size: 15px;
   line-height: 24px;
+  text-transform: uppercase;
   color: #ffffff;
 }
 .cart__row {
@@ -1952,6 +2028,19 @@ img {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
+  .footer__wrapper > .cart__column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .cart__column-one {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .cart__column-two {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
 }
 @media (max-width: 640px) {
   .footer__wrapper {
@@ -1984,6 +2073,8 @@ img {
 }
 @media (max-width: 768px) {
   .footer__info {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
     grid-area: c;
   }
 }
@@ -2027,6 +2118,10 @@ img {
     grid-area: b;
   }
 }
+.cart__container > .footer__contacts {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  }
 .footer__social > .footer__contacts {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -2076,6 +2171,11 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
+  .cart__container > .footer__social {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
   .footer__wrapper > .footer__social {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -2114,6 +2214,11 @@ img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
 }
+.cart__container > .footer__name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+}
 .footer__wrapper > .footer__name {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -2130,11 +2235,17 @@ img {
 .footer__linkOne {
   grid-area: b;
 }
+.cart__container > .footer__linkOne {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
 .footer__social > .footer__linkOne {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
 .footer__linkTwo {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: c;
 }
 .footer__social > .footer__linkTwo {
@@ -2153,6 +2264,15 @@ img {
 }
 @media (max-width: 440px) {
   .skin__carousel {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .skin__wrapper-reverses > .cart__column {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .cart__column-two {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
