@@ -1726,10 +1726,15 @@ img {
   cursor: pointer;
 }
 
-.cart__quantity {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.cart__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.cart__column {
+  background: #e5e5e5;
 }
 .cart__minus {
   font-size: 16px;
@@ -1754,6 +1759,100 @@ img {
   height: 35px;
   width: 30px;
   cursor: pointer;
+}
+.cart__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 24px;
+  color: #555555;
+}
+.cart__product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+.cart__name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+.cart__price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+.cart__quantity {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+.cart__subtotal {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+.cart__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 24px;
+  color: #555555;
+}
+.cart__Allprice {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+.cart__payment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+.cart__button {
+  background: #43be65;
+  width: 299px;
+  height: 33px;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  text-align: center;
+}
+.cart__btn {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.cart__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+.cart__quant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contacts__wrapper {
