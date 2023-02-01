@@ -7,13 +7,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
-  }
 
-  @media (max-width: 440px) {
-    &__wrapper {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 10px;
+    @media (max-width: 440px) {      
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;     
     }
   }
 
@@ -45,18 +43,15 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-  }
 
-  @media (max-width: 768px) {
-    &__subtitle {
-      bottom: 100px;
+    @media (max-width: 768px) {      
+        bottom: 100px;      
     }
-  }
+  
+    @media (max-width: 440px) {      
+        bottom: 20px;    
+    }
 
-  @media (max-width: 440px) {
-    &__subtitle {
-      bottom: 20px;
-    }
   }
 
   &__h2 {
@@ -66,21 +61,18 @@
     line-height: 39px;
     text-transform: uppercase;
     color: #fff;
-  }
 
-  @media (max-width: 991px) {
-    &__h2 {
-      font-size: 26px;
+    @media (max-width: 991px) {      
+        font-size: 26px;      
     }
-  }
-
-  @media (max-width: 440px) {
-    &__h2 {
-      font-size: 20px;
-      line-height: 10px;
+  
+    @media (max-width: 440px) {      
+        font-size: 20px;
+        line-height: 10px;    
     }
-  }
 
+  }
+  
   &__link {
     font-family: "Open Sans";
     font-weight: 600;
@@ -88,19 +80,17 @@
     font-size: 18px;
     line-height: 39px;
     text-decoration: underline;
-  }
 
-  @media (max-width: 768px) {
-    &__link {
-      font-size: 13px;
-      line-height: 0;
+    @media (max-width: 768px) {      
+        font-size: 13px;
+        line-height: 0;      
     }
-  }
-  @media (max-width: 440px) {
-    &__link {
-      font-size: 10px;
+
+    @media (max-width: 440px) {     
+        font-size: 10px;      
     }
-  }
+
+  }  
 
   &__title {
     font-family: "Open Sans";
@@ -117,10 +107,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
-  }
-  @media (max-width: 440px) {
-    &__carousel {
-      grid-area: b;
+
+    @media (max-width: 440px) {      
+        grid-area: b;      
     }
+    
   }
+ 
 }

@@ -1,14 +1,13 @@
 .makeup {
   & {
     margin-bottom: 40px;
-  }
 
-  @media (max-width: 768px) {
-    & {
-      margin-bottom: 15px;
+    @media (max-width: 768px) {     
+        margin-bottom: 15px;      
     }
-  }
 
+  }
+  
   &__title {
     font-family: "Open Sans";
     font-weight: 600;
@@ -18,29 +17,27 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
-  }
 
-  @media (max-width: 768px) {
-    &__title {
-      font-size: 26px;
-      margin-bottom: 15px;
+    @media (max-width: 768px) {     
+        font-size: 26px;
+        margin-bottom: 15px;     
     }
-  }
+
+  } 
 
   &__columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
-  }
 
-  @media (max-width: 440px) {
-    &__columns {
-      -ms-grid-columns: 1fr;
-      grid-template-columns: repeat(1, 1fr);
-      -ms-grid-rows: 1fr 10px 1fr;
-      grid-template-rows: repeat(2, 1fr);
-      gap: 10px;
+    @media (max-width: 440px) {      
+        -ms-grid-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        -ms-grid-rows: 1fr 10px 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;      
     }
+
   }
 
   &__column {
@@ -58,12 +55,11 @@
     top: 80%;
     left: 50%;
     transform: translateX(-50%);
-  }
 
-  @media (max-width: 768px) {
-    &__row {
-      top: 68%;
+    @media (max-width: 768px) {     
+        top: 68%;      
     }
+
   }
 
   &__text {
@@ -73,22 +69,19 @@
     line-height: 39px;
     text-transform: uppercase;
     color: #fff;
-  }
 
-  @media (max-width: 768px) {
-    &__text {
-      font-size: 28px;
-      line-height: 20px;
+    @media (max-width: 768px) {      
+        font-size: 28px;
+        line-height: 20px;      
     }
-  }
-
-  @media (max-width: 440px) {
-    &__text {
-      font-size: 20px;
-      line-height: 10px;
+  
+    @media (max-width: 440px) {      
+        font-size: 20px;
+        line-height: 10px;      
     }
-  }
 
+  }
+ 
   &__link {
     font-family: "Open Sans";
     font-weight: 600;
@@ -96,12 +89,12 @@
     line-height: 39px;
     color: #fff;
     text-decoration: underline;
+    
+  @media (max-width: 768px) {    
+        font-size: 14px;
+        line-height: 20px;   
+  }
+  
   }
 
-  @media (max-width: 768px) {
-    &__link {
-        font-size: 14px;
-        line-height: 20px;
-    }
-  }
 }

@@ -11,17 +11,15 @@
     line-height: 40px;
     color: #555555;
     text-align: center;
+
+    @media (max-width: 768px) {      
+        font-size: 26px;     
+    }
   }
 
   &__variete {
     text-align: center;
-  }
-
-  @media (max-width: 768px) {
-    &__title {
-      font-size: 26px;
-    }
-  }
+  } 
 
   &__all {
     display: grid;
@@ -34,13 +32,11 @@
     line-height: 39px;
     color: #555555;
     text-decoration: underline;
-  }
 
-  @media (max-width: 768px) {
-    &__see {
-      font-size: 14px;
+    @media (max-width: 768px) {      
+        font-size: 14px;      
     }
-  }
+  } 
 
   &__see:hover {
     color: #323232;
@@ -70,13 +66,11 @@
     letter-spacing: 1px;
     color: #555555;
     text-align: center;
-  }
 
-  @media (max-width: 768px) {
-    &__text {
-      font-size: 12px;
+    @media (max-width: 768px) {     
+        font-size: 12px;      
     }
-  }
+  }  
 
   &__price {
     font-family: "Open Sans";
@@ -98,17 +92,15 @@
     &__price-new {
       font-size: 16px;
     }
-  }
-
-  @media (max-width: 996px) {
-    &__price-old {
-      font-size: 16px;
-    }
-  }
+  } 
 
   &__price-old {
     padding-left: 10px;
     text-decoration: line-through;
+
+    @media (max-width: 996px) {      
+        font-size: 16px;     
+    }
   }
 
   &__button {

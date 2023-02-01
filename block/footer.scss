@@ -8,35 +8,31 @@
     grid-template-areas: "a a a";
     justify-content: space-around;
     padding: 58px 0;
-  }
 
-  @media (max-width: 768px) {
-    &__wrapper {
-      text-align: center;
-      grid-template-areas:
-        "a"
-        "b"
-        "c";
+    @media (max-width: 768px) {      
+        text-align: center;
+        grid-template-areas:
+          "a"
+          "b"
+          "c";      
     }
-  }
+  
+    @media (max-width: 640px) {      
+        padding: 28px 0;      
+    }
 
-  @media (max-width: 640px) {
-    &__wrapper {
-      padding: 28px 0;
-    }
-  }
+  } 
 
   &__info {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-  }
 
-  @media (max-width: 768px) {
-    &__info {
-      grid-area: c;
+    @media (max-width: 768px) {      
+        grid-area: c;     
     }
-  }
+
+  }  
 
   &__list {
     font-family: "Open Sans";
@@ -55,19 +51,15 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-  }
 
-  @media (max-width: 768px) {
-    &__contacts {
-      grid-area: b;
+    @media (max-width: 768px) {      
+        grid-area: b;      
     }
-  }
-
-  @media (max-width: 420px) {
-    &__contacts {
-      grid-template-rows: repeat(2, 1fr);
+  
+    @media (max-width: 420px) {      
+        grid-template-rows: repeat(2, 1fr);      
     }
-  }
+  } 
 
   &__connection {
     font-family: "Open Sans";
@@ -91,20 +83,17 @@
     grid-template-areas:
       "a a a a"
       "b c d e";
-  }
 
-  @media (max-width: 768px) {
-    &__social {
-      grid-area: a;
-    }
+      @media (max-width: 768px) {        
+          grid-area: a;        
+      }
+    
+      @media (max-width: 420px) {        
+          display: none;       
+      }
+          
   }
-
-  @media (max-width: 420px) {
-    &__social {
-      display: none;
-    }
-  }
-
+ 
   &__name {
     font-family: "Open Sans";
     font-style: normal;

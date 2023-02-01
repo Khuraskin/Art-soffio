@@ -2,18 +2,59 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto;
     gap: 30px;
+    grid-template-areas:
+      "a b"
+      "c b"
+    ;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "a"
+        "b"
+        "c";
+    }
   }
 
   &__column {
-    background: #e5e5e5;
+    background: #F8f8f8;;
+    grid-area: a;
   }
 
+  &__column-one {
+    background: #F8f8f8;;
+    grid-area: b;
+
+    @media (max-width: 768px) {      
+        grid-area: c;     
+    }
+  }
+
+  &__column-two { 
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-area: c;
+    background: #F8f8f8;;
+
+    @media (max-width: 768px) {      
+        grid-area: b;
+        grid-template-columns: 1fr;     
+    }
+  } 
+
   &__minus {
-    font-size: 16px;
-    border: 1px solid red;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    background: #a19c9c;
+    border: 1px solid #000000;
+    border-radius: 50%;   
     height: 35px;
-    width: 30px;
+    width: 35px;
     cursor: pointer;
   }
 
@@ -22,15 +63,22 @@
     appearance: none;
     font-size: 16px;
     height: 35px;
-    width: 45px;
-    border: 1px solid red;
+    width: 35px;
+    background: #F8f8f8;
+    text-align: center;
   }
 
   &__plus {
-    font-size: 16px;
-    border: 1px solid red;
+    display: grid;
+    align-items: center;
+    text-align: center;    
+    font-size: 24px;
+    color: #ffffff;
+    background: #a19c9c;
+    border: 1px solid #000000;
+    border-radius: 50%;
     height: 35px;
-    width: 30px;
+    width: 35px;
     cursor: pointer;
   }
 
@@ -43,11 +91,6 @@
     color: #555555;
   }
 
-  &__product {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   &__name {
     font-family: "Open Sans";
     font-style: normal;
@@ -55,32 +98,20 @@
     font-size: 16px;
     line-height: 24px;
     color: #555555;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+    }
+  } 
+
+  &__product {
+    background: #F8f8f8;
   }
 
-  &__price {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #555555;
-  }
-
-  &__quantity {
-    font-family: "Open Sans";
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #555555;
-  }
-
-  &__subtotal {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #555555;
+  &__foto {
+    max-width: 100%;
+    height: auto;
+    padding: 5%;
   }
 
   &__text {
@@ -92,7 +123,7 @@
     color: #555555;
   }
 
-  &__Allprice {
+  &__full {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -103,13 +134,16 @@
   }
 
   &__button {
+    display: grid;
+    align-items: center;
+    text-align: center;
     background: #43be65;
     width: 299px;
     height: 33px;
     border: 1px solid #ffffff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 19px;
-    text-align: center;
+    margin-left: auto;    
   }
 
   &__btn {
@@ -118,15 +152,33 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 24px;
+    text-transform: uppercase;
     color: #ffffff;
-  }
-
-  &__row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+  } 
 
   &__quant {
     display: flex;
   }
+
+  @media (max-width: 768px) {
+    &__price {
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__quantity {
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__subtotal {
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
 }

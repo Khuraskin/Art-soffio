@@ -7,14 +7,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
-  }
 
-  @media (max-width: 440px) {
-    &__wrapper {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px;
+    @media (max-width: 440px) {      
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;     
     }
-  }
+
+  } 
 
   &__column {
     position: relative;
@@ -29,19 +28,16 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
-  }
 
-  @media (max-width: 768px) {
-    &__title {
-      font-size: 26px;
-      margin-bottom: 26px;
+    @media (max-width: 768px) {      
+        font-size: 26px;
+        margin-bottom: 26px;      
     }
-  }
+  
+    @media (max-width: 440px) {      
+        margin-bottom: 10px;      
+    }
 
-  @media (max-width: 440px) {
-    &__title {
-      margin-bottom: 10px;
-    }
   }
 
   &__subtitle {
@@ -50,19 +46,16 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-  }
 
-  @media (max-width: 768px) {
-    &__subtitle {
-      bottom: 100px;
+    @media (max-width: 768px) {      
+        bottom: 100px;      
     }
-  }
+  
+    @media (max-width: 440px) {      
+        bottom: 20px;      
+    }
 
-  @media (max-width: 440px) {
-    &__subtitle {
-      bottom: 20px;
-    }
-  }
+  }  
 
   &__h2 {
     font-family: "Open Sans";
@@ -71,20 +64,16 @@
     line-height: 39px;
     text-transform: uppercase;
     color: #fff;
-  }
 
-  @media (max-width: 991px) {
-    &__h2 {
-      font-size: 26px;
+    @media (max-width: 991px) {      
+        font-size: 26px;      
     }
-  }
-
-  @media (max-width: 440px) {
-    &__h2 {
-      font-size: 20px;
-      line-height: 10px;
+  
+    @media (max-width: 440px) {      
+        font-size: 20px;
+        line-height: 10px;     
     }
-  }
+  } 
 
   &__picture {
     border: 1px solid #e5e5e5;
@@ -104,13 +93,11 @@
     line-height: 39px;
     color: #fff;
     text-decoration: underline;
-  }
 
-  @media (max-width: 991px) {
-    &__link-one {
-      font-size: 14px;
+    @media (max-width: 991px) {      
+        font-size: 14px;      
     }
-  }
+  } 
 
   &__text {
     font-family: "Open Sans";

@@ -2,13 +2,13 @@
 
   & {
     margin-bottom: 50px;
-  }
-  
-  @media (max-width: 440px) {
-    & {
-      margin-bottom: 5px;
+
+    @media (max-width: 440px) {      
+        margin-bottom: 5px;      
     }
-  }
+    
+  }  
+ 
   &__pic {
     width: 100%;
     height: auto;
