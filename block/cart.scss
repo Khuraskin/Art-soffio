@@ -6,8 +6,7 @@
     gap: 30px;
     grid-template-areas:
       "a b"
-      "c b"
-    ;
+      "c b";
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -19,67 +18,85 @@
   }
 
   &__column {
-    background: #F8f8f8;;
+    background: #f8f8f8;
     grid-area: a;
   }
 
   &__column-one {
-    background: #F8f8f8;;
+    background: #f8f8f8;
     grid-area: b;
 
-    @media (max-width: 768px) {      
-        grid-area: c;     
+    @media (max-width: 768px) {
+      grid-area: c;
     }
   }
 
-  &__column-two { 
+  &__column-two {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-area: c;
-    background: #F8f8f8;;
+    background: #f8f8f8;
 
-    @media (max-width: 768px) {      
-        grid-area: b;
-        grid-template-columns: 1fr;     
+    @media (max-width: 768px) {
+      grid-area: b;
+      grid-template-columns: 1fr;
     }
-  } 
+  }
 
   &__minus {
     display: grid;
     align-items: center;
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     color: #ffffff;
     background: #a19c9c;
     border: 1px solid #000000;
-    border-radius: 50%;   
-    height: 35px;
-    width: 35px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+      height: 18px;
+      width: 18px;
+    }
   }
 
   &__number {
     margin: 0;
     appearance: none;
     font-size: 16px;
-    height: 35px;
-    width: 35px;
-    background: #F8f8f8;
+    height: 30px;
+    width: 30px;
+    background: #f8f8f8;
     text-align: center;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+      height: 18px;
+      width: 18px;
+    }
   }
 
   &__plus {
     display: grid;
     align-items: center;
-    text-align: center;    
-    font-size: 24px;
+    text-align: center;
+    font-size: 16px;
     color: #ffffff;
     background: #a19c9c;
     border: 1px solid #000000;
     border-radius: 50%;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+      height: 18px;
+      width: 18px;
+    }
   }
 
   &__title {
@@ -89,6 +106,23 @@
     font-size: 23px;
     line-height: 24px;
     color: #555555;
+  }
+
+  &__subtitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555555;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
+    @media (max-width: 440px) {
+      font-size: 16px;
+    }
   }
 
   &__name {
@@ -102,10 +136,40 @@
     @media (max-width: 440px) {
       font-size: 12px;
     }
-  } 
+  }
+
+  &__total {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+    }
+  }
+
+  &__sum {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+    }
+  }
 
   &__product {
-    background: #F8f8f8;
+    background: #f8f8f8;
+    @media (max-width: 768px) {
+      display: grid;
+      justify-content: center;
+    }
   }
 
   &__foto {
@@ -121,6 +185,45 @@
     font-size: 23px;
     line-height: 24px;
     color: #555555;
+  }
+
+  &__pay {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+    }
+  }
+
+  &__cost {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+    }
+  }
+
+  &__all {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+    }
   }
 
   &__full {
@@ -143,7 +246,7 @@
     border: 1px solid #ffffff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 19px;
-    margin-left: auto;    
+    margin-left: auto;
   }
 
   &__btn {
@@ -154,7 +257,7 @@
     line-height: 24px;
     text-transform: uppercase;
     color: #ffffff;
-  } 
+  }
 
   &__quant {
     display: flex;
@@ -163,22 +266,21 @@
   @media (max-width: 768px) {
     &__price {
       display: grid;
-    grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 768px) {
     &__quantity {
       display: grid;
-    grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 768px) {
     &__subtotal {
       display: grid;
-    grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
-
 }

@@ -1753,7 +1753,7 @@ img {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
-  background: #F8f8f8;
+  background: #f8f8f8;
   grid-area: a;
 }
 .navigation__item > .cart__column {
@@ -1782,7 +1782,7 @@ img {
   -ms-grid-column-span: 4;
 }
 .cart__column-one {
-  background: #F8f8f8;
+  background: #f8f8f8;
   grid-area: b;
 }
 .cart__container > .cart__column-one {
@@ -1814,7 +1814,7 @@ img {
   -ms-grid-columns: 2fr 1fr 1fr 1fr;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-area: c;
-  background: #F8f8f8;
+  background: #f8f8f8;
 }
 .footer__social > .cart__column-two {
   -ms-grid-row: 2;
@@ -1844,14 +1844,21 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
   color: #ffffff;
   background: #a19c9c;
   border: 1px solid #000000;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
+}
+@media (max-width: 440px) {
+  .cart__minus {
+    font-size: 12px;
+    height: 18px;
+    width: 18px;
+  }
 }
 .cart__number {
   margin: 0;
@@ -1859,10 +1866,17 @@ img {
      -moz-appearance: none;
           appearance: none;
   font-size: 16px;
-  height: 35px;
-  width: 35px;
-  background: #F8f8f8;
+  height: 30px;
+  width: 30px;
+  background: #f8f8f8;
   text-align: center;
+}
+@media (max-width: 440px) {
+  .cart__number {
+    font-size: 12px;
+    height: 18px;
+    width: 18px;
+  }
 }
 .cart__plus {
   display: -ms-grid;
@@ -1871,14 +1885,21 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
   color: #ffffff;
   background: #a19c9c;
   border: 1px solid #000000;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
+}
+@media (max-width: 440px) {
+  .cart__plus {
+    font-size: 12px;
+    height: 18px;
+    width: 18px;
+  }
 }
 .cart__title {
   font-family: "Open Sans";
@@ -1887,6 +1908,24 @@ img {
   font-size: 23px;
   line-height: 24px;
   color: #555555;
+}
+.cart__subtitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #555555;
+}
+@media (max-width: 768px) {
+  .cart__subtitle {
+    text-align: center;
+  }
+}
+@media (max-width: 440px) {
+  .cart__subtitle {
+    font-size: 16px;
+  }
 }
 .cart__name {
   font-family: "Open Sans";
@@ -1901,8 +1940,43 @@ img {
     font-size: 12px;
   }
 }
+.cart__total {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+@media (max-width: 440px) {
+  .cart__total {
+    font-size: 12px;
+  }
+}
+.cart__sum {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+@media (max-width: 440px) {
+  .cart__sum {
+    font-size: 12px;
+  }
+}
 .cart__product {
-  background: #F8f8f8;
+  background: #f8f8f8;
+}
+@media (max-width: 768px) {
+  .cart__product {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .cart__foto {
   max-width: 100%;
@@ -1916,6 +1990,45 @@ img {
   font-size: 23px;
   line-height: 24px;
   color: #555555;
+}
+.cart__pay {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+@media (max-width: 440px) {
+  .cart__pay {
+    font-size: 12px;
+  }
+}
+.cart__cost {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+@media (max-width: 440px) {
+  .cart__cost {
+    font-size: 12px;
+  }
+}
+.cart__all {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+@media (max-width: 440px) {
+  .cart__all {
+    font-size: 12px;
+  }
 }
 .cart__full {
   display: -ms-grid;
