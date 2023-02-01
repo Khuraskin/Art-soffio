@@ -1727,6 +1727,14 @@ img {
   cursor: pointer;
 }
 
+.cart {
+  margin-bottom: 40px;
+}
+@media (max-width: 440px) {
+  .cart {
+    margin-bottom: 20px;
+  }
+}
 .cart__container {
   display: -ms-grid;
   display: grid;

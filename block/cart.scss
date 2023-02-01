@@ -1,4 +1,14 @@
 .cart {
+
+  & {
+    margin-bottom: 40px;
+
+    @media (max-width: 440px) {
+      margin-bottom: 20px;
+    }
+    
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
